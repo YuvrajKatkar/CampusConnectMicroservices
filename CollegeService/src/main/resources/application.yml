@@ -1,0 +1,20 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: CollegeService
+  datasource:
+    url: jdbc:mysql://localhost:3306/collegestudentms
+    username: root
+    password: mysql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+eureka:
+  client:
+    service-url:
+      defaulZone: http://localhost:8761/eureka
